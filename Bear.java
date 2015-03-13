@@ -1,10 +1,10 @@
 import java.util.List;
 import java.util.ArrayList;
 /**
- * Write a description of class Bear here.
+ * This is the bear class that has a bunch of cool methods!
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Adam Espinoza    
+ * @version 03-13-15
  */
 public class Bear extends Animal 
 {
@@ -20,16 +20,28 @@ public class Bear extends Animal
         toys.add("Plush Fish");
     }
 
+    /**
+     * Makes any general bear respond with a roar
+     * @return String contating "RAAAAAAAAAAWR"
+     */
     public String roar()
     {
         return "RAAAAAAAAAAWR";
     }
     
+    /**
+     * Makes any general bear respond in sleep
+     * @return String contating "zzzzzzzzz"
+     */
     public String sleep()
     {
         return "zzzzzzzzz";
     }
     
+    /**
+     * Makes any general bear play
+     * If it has a toy, it will respond differently
+     */
     public String play()
     {
         String playing = "";
@@ -40,17 +52,29 @@ public class Bear extends Animal
         return playing;
     }
     
+    /**
+     * Makes any general bear eat a volunteer.
+     * @return String contating "The bear reaches through the bars and eats a volunteer"
+     */
     public String eat()
     {
         return "The bear reaches through the bars and eats a volunteer";
     }
     
+    /**
+     * Overrides the move method in the <<abstract>> Animal class.
+     * @returns the phrase "The bear waddles back on forth on both legs in a labrous fashion."
+     */
     @Override
     public String move()
     {
         return "The bear waddles back on forth on both legs in a labrous fashion.";
     }
     
+    /**
+     * Overrides the makeNoise() method in <<abstract>> Animal class. 
+     * @return String contating "RAWR"
+     */
     @Override 
     public String makeNoise()
     {
