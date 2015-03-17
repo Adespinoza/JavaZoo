@@ -8,16 +8,24 @@ import java.util.ArrayList;
  */
 public class Bear extends Animal 
 {
-    private String appearance;
     private List<String> toys;
+    
     /**
      * Constructor for objects of class Bear
      */
+    public Bear(String name, String description, String toy)
+    {
+        super(description, name); 
+        //description = "This a standard looking bear in all respects. Use your imagination.";
+        toys = new ArrayList<String>();
+        toys.add(toy);
+    }
+    
     public Bear()
     {
-        appearance = "This a standard looking bear in all respects. Use your imagination.";
-        toys = new ArrayList<String>();
-        toys.add("Plush Fish");
+        super("A general bear.", "General Bear");
+        toys = new ArrayList<String>(); 
+        toys.add("Beach Ball");
     }
 
     /**

@@ -6,6 +6,31 @@
  */
 public abstract class Animal
 {
+    private String description; 
+    private String name; 
+    
+    public Animal (String desc, String name)
+    {
+        this.description = desc;
+        this.name = name; 
+    }
+    
+    public Animal()
+    {
+        description = "This is a generic animal. Nothing too interesting..."; 
+        name = "Animal Something"; 
+    }
+    
+    public String getName()
+    {
+        return name; 
+    }
+    
+    public String getDescription()
+    {
+        return description; 
+    }
+    
     /*#
      * All animals that inherit from this class
      * MUST OVERRIDE the following methods. 
