@@ -1,33 +1,45 @@
-
+import java.util.List; 
 /**
- * Write a description of class SCP173 here.
+ * SCP-173 is constructed from concrete and rebar with traces of Krylon brand spray paint. 
+ * SCP-173 is animate and extremely hostile, though the object cannot move 
+ *      while within a direct line of sight.
+ * Line of sight must not be broken at any time with SCP-173. 
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Adam Espinoza 
+ * @2015-19-03
  */
-public class SCP173
+public class SCP173 extends Animal implements Roamable
 {
-    // instance variables - replace the example below with your own
-    private int x;
 
     /**
-     * Constructor for objects of class SCP173
+     * Constructor for objects of class SCP-173
      */
-    public SCP173()
+    public SCP173(String name, String description)
     {
-        // initialise instance variables
-        x = 0;
+        super(name,description);  
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
+     *  This tells the person viewing SCP-173 that things aren't going so well. 
      */
-    public int sampleMethod(int y)
+    @Override
+    public String move()
     {
-        // put your code here
-        return x + y;
+        return "The creature does not move at all. You feel an over-arching sense that something is wrong."
+            + "/nYou should probably leave the containment before it is breached."; 
     }
+    
+    @Override
+    public String makeNoise()
+    {
+        return "SCP-173 does not make any noise. It stares are you blankly.";
+    }
+    
+    @Override
+    public String eat()
+    {
+        return "A personnel is thrown into the pit and SCP-173 breaks it neck. The man is absorbed.";
+    }
+    
+    
 }
